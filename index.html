@@ -1,0 +1,1225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/> -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./font/fontawesome-free-5.15.4-web/fontawesome-free-5.15.4-web/css/all.min.css">
+    <link rel="stylesheet" href="./font/themify-icons-font/themify-icons/themify-icons.css">
+    <link rel="stylesheet" href="my__reponsive.css">
+    <link rel="icon" href="data:image/png;base64,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">
+    <title>Lukani</title>
+</head>
+<body>
+    <div class="app">
+        <div class="upToTop">
+            <i class="fas fa-angle-double-up"></i>
+        </div>
+        <div class="header">
+            <div class="header-top">
+                <div class="container">
+                    <div class="row">
+                        <div class="col b-7">
+                            <div class="header-top__left">Free Delivery: Take advantage of our time to save event</div>
+                        </div>
+                        <div class="col b-5">
+                            <div class="header-top__right">
+                                <div class="header-currency">
+                                    <div class="header-top__selected">
+                                        <span>USD</span>
+                                        <i class="ti-angle-down"></i>
+                                    </div>
+                                    <ul class="header-top__list">
+                                        <li class="header-top__item">EUR</li>
+                                        <li class="header-top__item">GPB</li>
+                                        <li class="header-top__item">RUP</li>
+                                    </ul>
+                                </div>
+                                <div class="header-language">
+                                    <div class="header-top__selected">
+                                        <span>English</span>
+                                        <i class="ti-angle-down"></i>
+                                    </div>
+                                    <ul class="header-top__list">
+                                        <li class="header-top__item">French</li>
+                                        <li class="header-top__item">Spanish</li>
+                                        <li class="header-top__item">Russian</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>        
+                </div>
+            </div>
+            <div class="header-middle">
+                <div class="container">
+                    <div class="row">
+                        <div class="col b-3 m-4">
+                            <img src="https://template.hasthemes.com/lukani/lukani/assets/img/logo/logo.png" alt="" class="header-logo">
+                        </div>
+                        <div class="col b-6 hd-mid__toolbar-wrap">
+                            <div class="hd-mid__toolbar">
+                                <div class="hd-mid__category">
+                                    <div class="hd-mid__category-selected">
+                                        <span>All Categories</span>
+                                        <i class="ti-angle-down"></i>
+                                    </div>
+                                    <ul class="hd-mid__category-list">
+                                        <li class="hd-mid__category-item">Accessories</li>
+                                        <li class="hd-mid__category-item">Accessories & More</li>
+                                        <li class="hd-mid__category-item">Butters & Eggs</li>
+                                        <li class="hd-mid__category-item">Camera & Video </li>
+                                        <li class="hd-mid__category-item">Mornitors</li>
+                                        <li class="hd-mid__category-item">Tablets</li>
+                                        <li class="hd-mid__category-item">Accessories</li>
+                                        <li class="hd-mid__category-item">Accessories & More</li>
+                                        <li class="hd-mid__category-item">Butters & Eggs</li>
+                                        <li class="hd-mid__category-item">Camera & Video </li>
+                                        <li class="hd-mid__category-item">Mornitors</li>
+                                        <li class="hd-mid__category-item">Tablets</li>
+                                    </ul>
+                                </div>
+                                <div class="hd-mid__input">
+                                    <input type="text" placeholder="Search product...">
+                                </div>
+                                <button class="hd-mid__btn-search">
+                                    <i class="ti-search"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="col b-3 m-6 hd-mid__account-wrap">
+                            <div class="hd-mid__account">
+                                <div class="hd-mid__account-item user">
+                                    <i class="fas fa-user"></i>
+                                    <ul class="header-top__list">
+                                        <li class="header-top__item">Checkout</li>
+                                        <li class="header-top__item">My Account</li>
+                                        <li class="header-top__item">Shopping Cart</li>
+                                        <li class="header-top__item">Wishlist</li>
+                                    </ul>
+                                </div>
+                                <div class="hd-mid__account-item favourite">
+                                    <i class="ti-heart"></i>
+                                </div>
+                                <div class="hd-mid__account-item cart">
+                                    <span class="quantity-cart">2</span>
+                                    <i class="fas fa-shopping-bag"></i>
+                                    <div class="cart__wrap">
+                                        <div class="cart__box">
+                                            <div class="cart__heading">
+                                                <span>Cart</span>
+                                                <div class="cart__close">
+                                                    <i class="ti-close"></i>
+                                                </div>
+                                            </div>
+                                            <div class="cart__list">
+                                                <div class="cart__item">
+                                                    <img src="https://template.hasthemes.com/lukani/lukani/assets/img/s-product/product.jpg" alt="">
+                                                    <div class="cart__item-discription">
+                                                        <a href="#">Primis In Faucibus</a>
+                                                        <p>x1 <strong>$65.00</strong></p>
+                                                    </div>
+                                                    <div class="cart__remove">
+                                                        <i class="ti-close"></i>
+                                                    </div>
+                                                </div>
+                                                <div class="cart__item">
+                                                    <img src="https://template.hasthemes.com/lukani/lukani/assets/img/s-product/product.jpg" alt="">
+                                                    <div class="cart__item-discription">
+                                                        <a href="#">Primis In Faucibus</a>
+                                                        <p>x1 <strong>$65.00</strong></p>
+                                                    </div>
+                                                    <div class="cart__remove">
+                                                        <i class="ti-close"></i>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="cart__price-list">
+                                                <div class="cart__price-item">
+                                                    <span class="cart__price-title">Sub total: </span>
+                                                    <span class="cart__price">$126.00</span>
+                                                </div>
+                                                <div class="cart__price-item">
+                                                    <span class="cart__price-title">Total: </span>
+                                                    <span class="cart__price">$126.00</span>
+                                                </div>
+                                            </div>
+                                            <div class="cart__btns">
+                                                <button class="btn btn-gray btn-full-w">
+                                                    <i class="ti-shopping-cart"></i>
+                                                    <span>VIEW CART</span>
+                                                </button>
+                                                <button class="btn btn-primary btn-full-w">
+                                                    <i class="fas fa-sign-out-alt"></i>
+                                                    <span>CHECKOUT</span>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col m-2 hd-mid__icon-menu">
+                            <div class="menu-icon">
+                                <i class="fas fa-bars"></i>
+                            </div>
+                        </div>
+                        <div class="tablet-menu">
+                            <div class="tablet-menu__box">
+                                <div class="tablet-menu__btn-close">
+                                    <i class="ti-close"></i>
+                                </div>
+                                <p class="tablet-menu__slogan">Free Delivery: Take advantage of our time to save event</p>
+                                <div class="tablet-menu__selects">
+                                    <div class="header-currency">
+                                        <div class="header-top__selected">
+                                            <span>USD</span>
+                                            <i class="ti-angle-down"></i>
+                                        </div>
+                                        <ul class="header-top__list">
+                                            <li class="header-top__item">EUR</li>
+                                            <li class="header-top__item">GPB</li>
+                                            <li class="header-top__item">RUP</li>
+                                        </ul>
+                                    </div>
+                                    <div class="header-language">
+                                        <div class="header-top__selected">
+                                            <span>English</span>
+                                            <i class="ti-angle-down"></i>
+                                        </div>
+                                        <ul class="header-top__list">
+                                            <li class="header-top__item">French</li>
+                                            <li class="header-top__item">Spanish</li>
+                                            <li class="header-top__item">Russian</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="tablet-menu__input">
+                                    <input type="text" placeholder="Search product ...">
+                                    <button>
+                                        <i class="ti-search"></i>
+                                    </button>
+                                </div>
+                                <div class="hd-mid__category tablet">
+                                    <div class="hd-mid__category-selected">
+                                        <span>All Categories</span>
+                                        <i class="ti-angle-down"></i>
+                                    </div>
+                                    <ul class="hd-mid__category-list">
+                                        <li class="hd-mid__category-item">Accessories</li>
+                                        <li class="hd-mid__category-item">Accessories & More</li>
+                                        <li class="hd-mid__category-item">Butters & Eggs</li>
+                                        <li class="hd-mid__category-item">Camera & Video </li>
+                                        <li class="hd-mid__category-item">Mornitors</li>
+                                        <li class="hd-mid__category-item">Tablets</li>
+                                        <li class="hd-mid__category-item">Accessories</li>
+                                        <li class="hd-mid__category-item">Accessories & More</li>
+                                        <li class="hd-mid__category-item">Butters & Eggs</li>
+                                        <li class="hd-mid__category-item">Camera & Video </li>
+                                        <li class="hd-mid__category-item">Mornitors</li>
+                                        <li class="hd-mid__category-item">Tablets</li>
+                                    </ul>
+                                </div>
+                                <p class="tablet-menu__call-support">
+                                    Call support: 123456789
+                                </p>
+                                <ul class="tablet-menu__list">
+                                    <li class="tablet-menu__item">
+                                        <div class="tablet-menu__item-title">
+                                            <span>Home</span>
+                                            <i class="ti-angle-down"></i>
+                                        </div>
+                                    </li>
+                                    <li class="tablet-menu__item">
+                                        <div class="tablet-menu__item-title">
+                                            <span>Shop</span>
+                                            <i class="ti-angle-down"></i>
+                                        </div>
+                                    </li>
+                                    <li class="tablet-menu__item">
+                                        <div class="tablet-menu__item-title">
+                                            <span>Blog</span>
+                                            <i class="ti-angle-down"></i>
+                                        </div>
+                                    </li>
+                                    <li class="tablet-menu__item">
+                                        <div class="tablet-menu__item-title">
+                                            <span>Pages</span>
+                                            <i class="ti-angle-down"></i>
+                                        </div>
+                                    </li>
+                                    <li class="tablet-menu__item">
+                                        <div class="tablet-menu__item-title">
+                                            <span>My Account</span>                                            
+                                        </div>
+                                    </li>
+                                    <li class="tablet-menu__item">
+                                        <div class="tablet-menu__item-title">
+                                            <span>About us</span>                                            
+                                        </div>
+                                    </li>
+                                    <li class="tablet-menu__item">
+                                        <div class="tablet-menu__item-title">
+                                            <span>Contact us</span>                                            
+                                        </div>
+                                    </li>
+                                </ul>
+                                <div class="tablet-menu__footer">
+                                    <div class="tablet-menu__footer-email">
+                                        <i class="ti-email"></i>
+                                        <span>: demo@example.com</span>
+                                    </div>
+                                    <div class="tablet-menu__footer-socials">
+                                        <i class="fab fa-facebook-f"></i>
+                                        <i class="fab fa-twitter"></i>
+                                        <i class="fab fa-pinterest-p"></i>
+                                        <i class="fab fa-google-plus-g"></i>
+                                        <i class="fab fa-linkedin-in"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="header-bottom">
+                <div class="container">
+                    <div class="row">
+                        <div class="col b-3">
+                            <div class="hd-bot__category">
+                                <div class="btn__category">
+                                    <i class="fas fa-stream"></i>
+                                    <h1>CATEGORIES</h1>
+                                </div>
+                                <ul class="category__list">
+                                    <li class="category__item">
+                                        <span>Brake Parts</span>
+                                        <i class="ti-angle-right"></i>
+                                        <div class="sub-category">
+                                            <div class="sub-category__col">
+                                                <h5>DRESSES</h5>
+                                                <ul class="sub-category__list">
+                                                    <li class="sub-category__item">Sweater box</li>
+                                                    <li class="sub-category__item">Evening</li>
+                                                    <li class="sub-category__item">Day</li>
+                                                    <li class="sub-category__item">Sports</li>
+                                                </ul>                
+                                            </div>
+                                            <div class="sub-category__col">
+                                                <h5>DRESSES</h5>
+                                                <ul class="sub-category__list">
+                                                    <li class="sub-category__item">Sweater box</li>
+                                                    <li class="sub-category__item">Evening</li>
+                                                    <li class="sub-category__item">Day</li>
+                                                    <li class="sub-category__item">Sports</li>
+                                                </ul>                
+                                            </div>
+                                            <div class="sub-category__col">
+                                                <h5>DRESSES</h5>
+                                                <ul class="sub-category__list">
+                                                    <li class="sub-category__item">Sweater box</li>
+                                                    <li class="sub-category__item">Evening</li>
+                                                    <li class="sub-category__item">Day</li>
+                                                    <li class="sub-category__item">Sports</li>
+                                                </ul>                
+                                            </div>
+                                            <div class="sub-category__col">
+                                                <h5>DRESSES</h5>
+                                                <ul class="sub-category__list">
+                                                    <li class="sub-category__item">Sweater box</li>
+                                                    <li class="sub-category__item">Evening</li>
+                                                    <li class="sub-category__item">Day</li>
+                                                    <li class="sub-category__item">Sports</li>
+                                                </ul>                
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="category__item">
+                                        <span>Wheels & Tires</span>
+                                        <i class="ti-angle-right"></i><div class="sub-category">
+                                            <div class="sub-category__col">
+                                                <h5>DRESSES</h5>
+                                                <ul class="sub-category__list">
+                                                    <li class="sub-category__item">Sweater box</li>
+                                                    <li class="sub-category__item">Evening</li>
+                                                    <li class="sub-category__item">Day</li>
+                                                    <li class="sub-category__item">Sports</li>
+                                                </ul>                
+                                            </div>
+                                            <div class="sub-category__col">
+                                                <h5>DRESSES</h5>
+                                                <ul class="sub-category__list">
+                                                    <li class="sub-category__item">Sweater box</li>
+                                                    <li class="sub-category__item">Evening</li>
+                                                    <li class="sub-category__item">Day</li>
+                                                    <li class="sub-category__item">Sports</li>
+                                                </ul>                
+                                            </div>
+                                            <div class="sub-category__col">
+                                                <h5>DRESSES</h5>
+                                                <ul class="sub-category__list">
+                                                    <li class="sub-category__item">Sweater box</li>
+                                                    <li class="sub-category__item">Evening</li>
+                                                    <li class="sub-category__item">Day</li>
+                                                    <li class="sub-category__item">Sports</li>
+                                                </ul>                
+                                            </div>
+                                            <div class="sub-category__col">
+                                                <h5>DRESSES</h5>
+                                                <ul class="sub-category__list">
+                                                    <li class="sub-category__item">Sweater box</li>
+                                                    <li class="sub-category__item">Evening</li>
+                                                    <li class="sub-category__item">Day</li>
+                                                    <li class="sub-category__item">Sports</li>
+                                                </ul>                
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="category__item">
+                                        <span>Furnitured & Decor</span>
+                                        <i class="ti-angle-right"></i>
+                                        <div class="sub-category">
+                                            <div class="sub-category__col">
+                                                <h5>DRESSES</h5>
+                                                <ul class="sub-category__list">
+                                                    <li class="sub-category__item">Sweater box</li>
+                                                    <li class="sub-category__item">Evening</li>
+                                                    <li class="sub-category__item">Day</li>
+                                                    <li class="sub-category__item">Sports</li>
+                                                </ul>                
+                                            </div>
+                                            <div class="sub-category__col">
+                                                <h5>DRESSES</h5>
+                                                <ul class="sub-category__list">
+                                                    <li class="sub-category__item">Sweater box</li>
+                                                    <li class="sub-category__item">Evening</li>
+                                                    <li class="sub-category__item">Day</li>
+                                                    <li class="sub-category__item">Sports</li>
+                                                </ul>                
+                                            </div>
+                                            <div class="sub-category__col">
+                                                <h5>DRESSES</h5>
+                                                <ul class="sub-category__list">
+                                                    <li class="sub-category__item">Sweater box</li>
+                                                    <li class="sub-category__item">Evening</li>
+                                                    <li class="sub-category__item">Day</li>
+                                                    <li class="sub-category__item">Sports</li>
+                                                </ul>                
+                                            </div>
+                                            <div class="sub-category__col">
+                                                <h5>DRESSES</h5>
+                                                <ul class="sub-category__list">
+                                                    <li class="sub-category__item">Sweater box</li>
+                                                    <li class="sub-category__item">Evening</li>
+                                                    <li class="sub-category__item">Day</li>
+                                                    <li class="sub-category__item">Sports</li>
+                                                </ul>                
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="category__item">
+                                        <span>Turbo System</span>
+                                        <i class="ti-angle-right"></i>
+                                        <div class="sub-category">
+                                            <div class="sub-category__col">
+                                                <h5>DRESSES</h5>
+                                                <ul class="sub-category__list">
+                                                    <li class="sub-category__item">Sweater box</li>
+                                                    <li class="sub-category__item">Evening</li>
+                                                    <li class="sub-category__item">Day</li>
+                                                    <li class="sub-category__item">Sports</li>
+                                                </ul>                
+                                            </div>
+                                            <div class="sub-category__col">
+                                                <h5>DRESSES</h5>
+                                                <ul class="sub-category__list">
+                                                    <li class="sub-category__item">Sweater box</li>
+                                                    <li class="sub-category__item">Evening</li>
+                                                    <li class="sub-category__item">Day</li>
+                                                    <li class="sub-category__item">Sports</li>
+                                                </ul>                
+                                            </div>
+                                            <div class="sub-category__col">
+                                                <h5>DRESSES</h5>
+                                                <ul class="sub-category__list">
+                                                    <li class="sub-category__item">Sweater box</li>
+                                                    <li class="sub-category__item">Evening</li>
+                                                    <li class="sub-category__item">Day</li>
+                                                    <li class="sub-category__item">Sports</li>
+                                                </ul>                
+                                            </div>
+                                            <div class="sub-category__col">
+                                                <h5>DRESSES</h5>
+                                                <ul class="sub-category__list">
+                                                    <li class="sub-category__item">Sweater box</li>
+                                                    <li class="sub-category__item">Evening</li>
+                                                    <li class="sub-category__item">Day</li>
+                                                    <li class="sub-category__item">Sports</li>
+                                                </ul>                
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="category__item">
+                                        <span>Brake Parts</span>
+                                    </li>
+                                    <li class="category__item">
+                                        <span>Brake Parts</span>
+                                    </li>
+                                    <li class="category__item">
+                                        <span>Brake Parts</span>
+                                    </li>
+                                    <li class="category__item">
+                                        <span>Brake Parts</span>
+                                    </li>
+                                    <li class="category__item">
+                                        <span>Brake Parts</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col b-6">
+                            <div class="hd-bot__menu">
+                                <ul class="hd-bot__menu-list">
+                                    <li class="hd-bot__menu-item">
+                                        <span>HOME</span>
+                                        <i class="ti-angle-down"></i>
+                                        <div class="hd-bot__sub-menu">
+                                            <ul class="sub-menu__list">
+                                                <li class="sub-menu__item">Home Shop 1</li>
+                                                <li class="sub-menu__item">Home Shop 2</li>
+                                                <li class="sub-menu__item">Home Shop 3</li>
+                                                <li class="sub-menu__item">Home Shop 4</li>
+                                                <li class="sub-menu__item">Home Shop 5</li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li class="hd-bot__menu-item">
+                                        <span>SHOP</span>
+                                        <i class="ti-angle-down"></i>
+                                        <div class="hd-bot__sub-menu shop">
+                                            <div class="sub-menu__item-box">
+                                                <h5>Shop layouts</h5>
+                                                <ul class="sub-menu__list">
+                                                    <li class="sub-menu__item">Full Width</li>
+                                                    <li class="sub-menu__item">Full Width List</li>
+                                                    <li class="sub-menu__item">Right Sidebar</li>
+                                                    <li class="sub-menu__item">Right Sidebar List</li>
+                                                    <li class="sub-menu__item">List View</li>
+                                                </ul>
+                                            </div>
+                                            <div class="sub-menu__item-box">
+                                                <h5>Other Pages</h5>
+                                                <ul class="sub-menu__list">
+                                                    <li class="sub-menu__item">Cart</li>
+                                                    <li class="sub-menu__item">Wislish</li>
+                                                    <li class="sub-menu__item">Checkout</li>
+                                                    <li class="sub-menu__item">My Account</li>
+                                                    <li class="sub-menu__item">Error 404</li>
+                                                </ul>
+                                            </div>
+                                            <div class="sub-menu__item-box">
+                                                <h5>Product Types</h5>
+                                                <ul class="sub-menu__list">
+                                                    <li class="sub-menu__item">Home Shop 1</li>
+                                                    <li class="sub-menu__item">Home Shop 2</li>
+                                                    <li class="sub-menu__item">Home Shop 3</li>
+                                                    <li class="sub-menu__item">Home Shop 4</li>
+                                                    <li class="sub-menu__item">Home Shop 5</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="hd-bot__menu-item">
+                                        <span>BLOG</span>
+                                        <i class="ti-angle-down"></i>
+                                        <div class="hd-bot__sub-menu">
+                                            <ul class="sub-menu__list">
+                                                <li class="sub-menu__item">Home Shop 1</li>
+                                                <li class="sub-menu__item">Home Shop 2</li>
+                                                <li class="sub-menu__item">Home Shop 3</li>
+                                                <li class="sub-menu__item">Home Shop 4</li>
+                                                <li class="sub-menu__item">Home Shop 5</li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li class="hd-bot__menu-item">
+                                        <span>PAGES</span>
+                                        <i class="ti-angle-down"></i>
+                                        <div class="hd-bot__sub-menu">
+                                            <ul class="sub-menu__list">
+                                                <li class="sub-menu__item">Home Shop 1</li>
+                                                <li class="sub-menu__item">Home Shop 2</li>
+                                                <li class="sub-menu__item">Home Shop 3</li>
+                                                <li class="sub-menu__item">Home Shop 4</li>
+                                                <li class="sub-menu__item">Home Shop 5</li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li class="hd-bot__menu-item">CONTACT US</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col b-3 hd-bot__support"><span class="hd-bot__support-text">
+                            Call Support: 0123456789
+                        </span></div>
+                    </div>
+                </div>
+            </div>
+            <div class="header-bottom__tablet">
+                <div class="container">
+                    <div class="row">
+                        <div class="col b-12">
+                            <div class="tablet-category">
+                                <div class="tablet-category__btn">
+                                    <i class="fas fa-stream"></i>
+                                    <h1>CATEGORIES</h1>
+                                </div>
+                                <ul class="tablet-category__list">
+                                    <li class="tablet-category__item">
+                                        <div class="tablet-category__item-title">
+                                            <span>Brake Parts</span>
+                                            <i class="fas fa-plus"></i>
+                                            <i class="fas fa-minus"></i>
+                                        </div>
+                                        <ul class="tablet-category__sub-list">
+                                            <li class="tablet-category__sub-item">
+                                                <div class="tablet-category__sub-item-title">
+                                                    <span>Dresses</span>
+                                                    <i class="fas fa-plus"></i>
+                                                </div>
+                                            </li>
+                                            <li class="tablet-category__sub-item">
+                                                <div class="tablet-category__sub-item-title">
+                                                    <span>Dresses</span>
+                                                    <i class="fas fa-plus"></i>
+                                                </div>
+                                            </li>
+                                            <li class="tablet-category__sub-item">
+                                                <div class="tablet-category__sub-item-title">
+                                                    <span>Dresses</span>
+                                                    <i class="fas fa-plus"></i>
+                                                </div>
+                                            </li>
+                                            <li class="tablet-category__sub-item">
+                                                <div class="tablet-category__sub-item-title">
+                                                    <span>Dresses</span>
+                                                    <i class="fas fa-plus"></i>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="tablet-category__item">
+                                        <div class="tablet-category__item-title">
+                                            <span>Wheels & Tires</span>
+                                            <i class="fas fa-plus"></i>
+                                            <i class="fas fa-minus"></i>
+                                        </div>
+                                        <ul class="tablet-category__sub-list">
+                                            <li class="tablet-category__sub-item">
+                                                <div class="tablet-category__sub-item-title">
+                                                    <span>Dresses</span>
+                                                    <i class="fas fa-plus"></i>
+                                                </div>
+                                            </li>
+                                            <li class="tablet-category__sub-item">
+                                                <div class="tablet-category__sub-item-title">
+                                                    <span>Dresses</span>
+                                                    <i class="fas fa-plus"></i>
+                                                </div>
+                                            </li>
+                                            <li class="tablet-category__sub-item">
+                                                <div class="tablet-category__sub-item-title">
+                                                    <span>Dresses</span>
+                                                    <i class="fas fa-plus"></i>
+                                                </div>
+                                            </li>
+                
+                                        </ul>
+                                    </li>
+                                    <li class="tablet-category__item">
+                                        <div class="tablet-category__item-title">
+                                            <span>Furnitured & Decor</span>
+                                            <i class="fas fa-plus"></i>
+                                            <i class="fas fa-minus"></i>
+                                        </div>
+                                        <ul class="tablet-category__sub-list">
+                                            <li class="tablet-category__sub-item">
+                                                <div class="tablet-category__sub-item-title">
+                                                    <span>Dresses</span>
+                                                    <i class="fas fa-plus"></i>
+                                                </div>
+                                            </li>
+                                            <li class="tablet-category__sub-item">
+                                                <div class="tablet-category__sub-item-title">
+                                                    <span>Dresses</span>
+                                                    <i class="fas fa-plus"></i>
+                                                </div>
+                                            </li>
+                                            <li class="tablet-category__sub-item">
+                                                <div class="tablet-category__sub-item-title">
+                                                    <span>Dresses</span>
+                                                    <i class="fas fa-plus"></i>
+                                                </div>
+                                            </li>
+                                            <li class="tablet-category__sub-item">
+                                                <div class="tablet-category__sub-item-title">
+                                                    <span>Dresses</span>
+                                                    <i class="fas fa-plus"></i>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="tablet-category__item">
+                                        <div class="tablet-category__item-title">
+                                            <span>Turbo System</span>
+                                            <i class="fas fa-plus"></i>
+                                            <i class="fas fa-minus"></i>
+                                        </div>
+                                        <ul class="tablet-category__sub-list">
+                                            <li class="tablet-category__sub-item">
+                                                <div class="tablet-category__sub-item-title">
+                                                    <span>Dresses</span>
+                                                    <i class="fas fa-plus"></i>
+                                                </div>
+                                            </li>
+                                            <li class="tablet-category__sub-item">
+                                                <div class="tablet-category__sub-item-title">
+                                                    <span>Dresses</span>
+                                                    <i class="fas fa-plus"></i>
+                                                </div>
+                                            </li>
+                                            <li class="tablet-category__sub-item">
+                                                <div class="tablet-category__sub-item-title">
+                                                    <span>Dresses</span>
+                                                    <i class="fas fa-plus"></i>
+                                                </div>
+                                            </li>
+                                            <li class="tablet-category__sub-item">
+                                                <div class="tablet-category__sub-item-title">
+                                                    <span>Dresses</span>
+                                                    <i class="fas fa-plus"></i>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="tablet-category__item">
+                                        <span>Brake Parts</span>
+                                    </li>
+                                    <li class="tablet-category__item">
+                                        <span>Brake Parts</span>
+                                    </li>
+                                    <li class="tablet-category__item">
+                                        <span>Brake Parts</span>
+                                    </li>
+                                    <li class="tablet-category__item">
+                                        <span>Brake Parts</span>
+                                    </li>
+                                    <li class="tablet-category__item">
+                                        <span>Brake Parts</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="main">
+            <div class="container">
+                <div class="slider">
+                    <div class="row">
+                        <div class="col b-12">
+                            <div class="silder__box">
+                                <div class="slider__list">
+                                    <div class="slider__item">
+                                        <img src="https://template.hasthemes.com/lukani/lukani/assets/img/slider/slider3.jpg" alt="">
+                                        <div class="slider__item-content">
+                                            <h1>BIG SALE</h1>
+                                            <p>Discount <span>20% Of</span> For Lukani Members</p>
+                                            <button class="btn btn-primary btn-round">
+                                                DISCOVER NOW
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="slider__item">
+                                        <img src="https://template.hasthemes.com/lukani/lukani/assets/img/slider/slider3.jpg" alt="">
+                                        <div class="slider__item-content">
+                                            <h1>BIG SALE</h1>
+                                            <p>Discount <span>20% Of</span> For Lukani Members</p>
+                                            <button class="btn btn-primary btn-round">
+                                                DISCOVER NOW
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="slider__item">
+                                        <img src="https://template.hasthemes.com/lukani/lukani/assets/img/slider/slider3.jpg" alt="">
+                                        <div class="slider__item-content">
+                                            <h1>BIG SALE</h1>
+                                            <p>Discount <span>20% Of</span> For Lukani Members</p>
+                                            <button class="btn btn-primary btn-round">
+                                                DISCOVER NOW
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="shipping">
+                    <div class="row">
+                        <div class="col b-4 m-6 s-12">
+                            <div class="shipping__item">
+                                <i class="fas fa-shipping-fast"></i>
+                                <div class="shippng__item-content">
+                                    <h5>FreeDelivery</h5>
+                                    <span>Free shipping around the world for all
+                                        orders over $120</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col b-4 m-6 s-12">
+                            <div class="shipping__item">
+                                <i class="fas fa-credit-card"></i>
+                                <div class="shippng__item-content">
+                                    <h5>Safe Payment</h5>
+                                    <span>With our payment gateway, don’t worry
+                                        about your information</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col b-4 m-6 s-12">
+                            <div class="shipping__item">
+                                <i class="fas fa-address-card"></i>
+                                <div class="shippng__item-content">
+                                    <h5>Friendly Services</h5>
+                                    <span>You have 30-day return guarantee for
+                                        every single order</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="shop-now">
+                    <div class="row">
+                        <div class="col b-6 s-12">
+                            <div class="shop-now__img">
+                                <img src="https://template.hasthemes.com/lukani/lukani/assets/img/bg/banner1.jpg" alt="">
+                                <div class="shop-now__content">
+                                    <p>Big Sale Products</p>
+                                    <h5>Plants For Interior</h5>
+                                    <a href="#">SHOP NOW</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col b-6 s-12">
+                            <div class="shop-now__img">
+                                <img src="https://template.hasthemes.com/lukani/lukani/assets/img/bg/banner1.jpg" alt="">
+                                <div class="shop-now__content">
+                                    <p>Big Sale Products</p>
+                                    <h5>Plants For Interior</h5>
+                                    <a href="#">SHOP NOW</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="main__content">
+                    <div class="container">
+                        <h1 class="main__content-heading">
+                            Our Products
+                        </h1>
+                        <div class="product__tabs">
+                            <button class="product__tab active">
+                                PLANT STAND & MOVERS
+                            </button>
+                            <button class="product__tab">
+                                PLANT FAMILIES
+                            </button>
+                            <button class="product__tab">
+                                OUTDOOR PLANT POTS
+                            </button>
+                        </div>
+                        <div class="product__list">
+                            <div class="row">
+                                <div class="col b-3 m-4 s-6 ss-12">
+                                    <div class="product__item">
+                                        <div class="product__item-img">
+                                            <img src="https://template.hasthemes.com/lukani/lukani/assets/img/product/product8.jpg" alt="">
+                                            <div class="product__item-img__sale">
+                                                -6%
+                                            </div>
+                                        </div>
+                                        <div class="product__stars">
+                                            <i class="ti-star"></i>
+                                            <i class="ti-star"></i>
+                                            <i class="ti-star"></i>
+                                            <i class="ti-star"></i>
+                                            <i class="ti-star"></i>
+                                        </div>        
+                                        <h1 class="product__name">Vulputate Rutrum</h1>     
+                                        <div class="product__price">
+                                            <span class="product__price-new">
+                                                $64.00
+                                            </span>
+                                            <span class="product__price-old">
+                                                $72.00
+                                            </span>
+                                        </div>                   
+                                    </div>
+                                </div>
+                                <div class="col b-3 m-4 s-6 ss-12">
+                                    <div class="product__item">
+                                        <div class="product__item-img">
+                                            <img src="https://template.hasthemes.com/lukani/lukani/assets/img/product/product8.jpg" alt="">
+                                            <div class="product__item-img__sale">
+                                                -6%
+                                            </div>
+                                        </div>
+                                        <div class="product__stars">
+                                            <i class="ti-star"></i>
+                                            <i class="ti-star"></i>
+                                            <i class="ti-star"></i>
+                                            <i class="ti-star"></i>
+                                            <i class="ti-star"></i>
+                                        </div>        
+                                        <h1 class="product__name">Vulputate Rutrum</h1>     
+                                        <div class="product__price">
+                                            <span class="product__price-new">
+                                                $64.00
+                                            </span>
+                                            <span class="product__price-old">
+                                                $72.00
+                                            </span>
+                                        </div>                   
+                                    </div>
+                                </div>
+                                <div class="col b-3 m-4 s-6 ss-12">
+                                    <div class="product__item">
+                                        <div class="product__item-img">
+                                            <img src="https://template.hasthemes.com/lukani/lukani/assets/img/product/product8.jpg" alt="">
+                                            <div class="product__item-img__sale">
+                                                -6%
+                                            </div>
+                                        </div>
+                                        <div class="product__stars">
+                                            <i class="ti-star"></i>
+                                            <i class="ti-star"></i>
+                                            <i class="ti-star"></i>
+                                            <i class="ti-star"></i>
+                                            <i class="ti-star"></i>
+                                        </div>        
+                                        <h1 class="product__name">Vulputate Rutrum</h1>     
+                                        <div class="product__price">
+                                            <span class="product__price-new">
+                                                $64.00
+                                            </span>
+                                            <span class="product__price-old">
+                                                $72.00
+                                            </span>
+                                        </div>                   
+                                    </div>
+                                </div>
+                                <div class="col b-3 m-4 s-6 ss-12">
+                                    <div class="product__item">
+                                        <div class="product__item-img">
+                                            <img src="https://template.hasthemes.com/lukani/lukani/assets/img/product/product8.jpg" alt="">
+                                            <div class="product__item-img__sale">
+                                                -6%
+                                            </div>
+                                        </div>
+                                        <div class="product__stars">
+                                            <i class="ti-star"></i>
+                                            <i class="ti-star"></i>
+                                            <i class="ti-star"></i>
+                                            <i class="ti-star"></i>
+                                            <i class="ti-star"></i>
+                                        </div>        
+                                        <h1 class="product__name">Vulputate Rutrum</h1>     
+                                        <div class="product__price">
+                                            <span class="product__price-new">
+                                                $64.00
+                                            </span>
+                                            <span class="product__price-old">
+                                                $72.00
+                                            </span>
+                                        </div>                   
+                                    </div>
+                                </div>
+                                <div class="col b-3 m-4 s-6 ss-12">
+                                    <div class="product__item">
+                                        <div class="product__item-img">
+                                            <img src="https://template.hasthemes.com/lukani/lukani/assets/img/product/product8.jpg" alt="">
+                                            <div class="product__item-img__sale">
+                                                -6%
+                                            </div>
+                                        </div>
+                                        <div class="product__stars">
+                                            <i class="ti-star"></i>
+                                            <i class="ti-star"></i>
+                                            <i class="ti-star"></i>
+                                            <i class="ti-star"></i>
+                                            <i class="ti-star"></i>
+                                        </div>        
+                                        <h1 class="product__name">Vulputate Rutrum</h1>     
+                                        <div class="product__price">
+                                            <span class="product__price-new">
+                                                $64.00
+                                            </span>
+                                            <span class="product__price-old">
+                                                $72.00
+                                            </span>
+                                        </div>                   
+                                    </div>
+                                </div>
+                                <div class="col b-3 m-4 s-6 ss-12">
+                                    <div class="product__item">
+                                        <div class="product__item-img">
+                                            <img src="https://template.hasthemes.com/lukani/lukani/assets/img/product/product8.jpg" alt="">
+                                            <div class="product__item-img__sale">
+                                                -6%
+                                            </div>
+                                        </div>
+                                        <div class="product__stars">
+                                            <i class="ti-star"></i>
+                                            <i class="ti-star"></i>
+                                            <i class="ti-star"></i>
+                                            <i class="ti-star"></i>
+                                            <i class="ti-star"></i>
+                                        </div>        
+                                        <h1 class="product__name">Vulputate Rutrum</h1>     
+                                        <div class="product__price">
+                                            <span class="product__price-new">
+                                                $64.00
+                                            </span>
+                                            <span class="product__price-old">
+                                                $72.00
+                                            </span>
+                                        </div>                   
+                                    </div>
+                                </div>
+                                <div class="col b-3 m-4 s-6 ss-12">
+                                    <div class="product__item">
+                                        <div class="product__item-img">
+                                            <img src="https://template.hasthemes.com/lukani/lukani/assets/img/product/product8.jpg" alt="">
+                                            <div class="product__item-img__sale">
+                                                -6%
+                                            </div>
+                                        </div>
+                                        <div class="product__stars">
+                                            <i class="ti-star"></i>
+                                            <i class="ti-star"></i>
+                                            <i class="ti-star"></i>
+                                            <i class="ti-star"></i>
+                                            <i class="ti-star"></i>
+                                        </div>        
+                                        <h1 class="product__name">Vulputate Rutrum</h1>     
+                                        <div class="product__price">
+                                            <span class="product__price-new">
+                                                $64.00
+                                            </span>
+                                            <span class="product__price-old">
+                                                $72.00
+                                            </span>
+                                        </div>                   
+                                    </div>
+                                </div>
+                                <div class="col b-3 m-4 s-6 ss-12">
+                                    <div class="product__item">
+                                        <div class="product__item-img">
+                                            <img src="https://template.hasthemes.com/lukani/lukani/assets/img/product/product8.jpg" alt="">
+                                            <div class="product__item-img__sale">
+                                                -6%
+                                            </div>
+                                        </div>
+                                        <div class="product__stars">
+                                            <i class="ti-star"></i>
+                                            <i class="ti-star"></i>
+                                            <i class="ti-star"></i>
+                                            <i class="ti-star"></i>
+                                            <i class="ti-star"></i>
+                                        </div>        
+                                        <h1 class="product__name">Vulputate Rutrum</h1>     
+                                        <div class="product__price">
+                                            <span class="product__price-new">
+                                                $64.00
+                                            </span>
+                                            <span class="product__price-old">
+                                                $72.00
+                                            </span>
+                                        </div>                   
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="main__content deal">
+                    <div class="container">
+                        <h1 class="main__content-heading">
+                            Today Deals
+                        </h1>
+                        <div class="product__list">
+                            <div class="row">
+                                <div class="col b-3 m-4 s-6 ss-12">
+                                    <div class="product__item">
+                                        <div class="product__item-img">
+                                            <img src="https://template.hasthemes.com/lukani/lukani/assets/img/product/product8.jpg" alt="">
+                                            <div class="product__item-img__sale">
+                                                -6%
+                                            </div>
+                                        </div>
+                                        <div class="product__stars">
+                                            <i class="ti-star"></i>
+                                            <i class="ti-star"></i>
+                                            <i class="ti-star"></i>
+                                            <i class="ti-star"></i>
+                                            <i class="ti-star"></i>
+                                        </div>        
+                                        <h1 class="product__name">Vulputate Rutrum</h1>     
+                                        <div class="product__price">
+                                            <span class="product__price-new">
+                                                $64.00
+                                            </span>
+                                            <span class="product__price-old">
+                                                $72.00
+                                            </span>
+                                        </div>                   
+                                    </div>
+                                </div>
+                                <div class="col b-3 m-4 s-6 ss-12">
+                                    <div class="product__item">
+                                        <div class="product__item-img">
+                                            <img src="https://template.hasthemes.com/lukani/lukani/assets/img/product/product8.jpg" alt="">
+                                            <div class="product__item-img__sale">
+                                                -6%
+                                            </div>
+                                        </div>
+                                        <div class="product__stars">
+                                            <i class="ti-star"></i>
+                                            <i class="ti-star"></i>
+                                            <i class="ti-star"></i>
+                                            <i class="ti-star"></i>
+                                            <i class="ti-star"></i>
+                                        </div>        
+                                        <h1 class="product__name">Vulputate Rutrum</h1>     
+                                        <div class="product__price">
+                                            <span class="product__price-new">
+                                                $64.00
+                                            </span>
+                                            <span class="product__price-old">
+                                                $72.00
+                                            </span>
+                                        </div>                   
+                                    </div>
+                                </div>
+                                <div class="col b-3 m-4 s-6 ss-12">
+                                    <div class="product__item">
+                                        <div class="product__item-img">
+                                            <img src="https://template.hasthemes.com/lukani/lukani/assets/img/product/product8.jpg" alt="">
+                                            <div class="product__item-img__sale">
+                                                -6%
+                                            </div>
+                                        </div>
+                                        <div class="product__stars">
+                                            <i class="ti-star"></i>
+                                            <i class="ti-star"></i>
+                                            <i class="ti-star"></i>
+                                            <i class="ti-star"></i>
+                                            <i class="ti-star"></i>
+                                        </div>        
+                                        <h1 class="product__name">Vulputate Rutrum</h1>     
+                                        <div class="product__price">
+                                            <span class="product__price-new">
+                                                $64.00
+                                            </span>
+                                            <span class="product__price-old">
+                                                $72.00
+                                            </span>
+                                        </div>                   
+                                    </div>
+                                </div>
+                                <div class="col b-3 m-4 s-6 ss-12">
+                                    <div class="product__item">
+                                        <div class="product__item-img">
+                                            <img src="https://template.hasthemes.com/lukani/lukani/assets/img/product/product8.jpg" alt="">
+                                            <div class="product__item-img__sale">
+                                                -6%
+                                            </div>
+                                        </div>
+                                        <div class="product__stars">
+                                            <i class="ti-star"></i>
+                                            <i class="ti-star"></i>
+                                            <i class="ti-star"></i>
+                                            <i class="ti-star"></i>
+                                            <i class="ti-star"></i>
+                                        </div>        
+                                        <h1 class="product__name">Vulputate Rutrum</h1>     
+                                        <div class="product__price">
+                                            <span class="product__price-new">
+                                                $64.00
+                                            </span>
+                                            <span class="product__price-old">
+                                                $72.00
+                                            </span>
+                                        </div>                   
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="main__content">
+                    <div class="container">
+                        <h1 class="main__content-heading">
+                            What Our Customers Says ?
+                        </h1>
+                        <div class="review__list">
+                            <div class="row">
+                                <div class="col b-12">
+                                    <div class="review__item">
+                                        <div class="review__icon">
+                                            <img src="https://template.hasthemes.com/lukani/lukani/assets/img/about/testimonials-icon.png" alt="">
+                                        </div>
+                                        <div class="review__content">
+                                            <p>“ When a beautiful design is combined with powerful technology, </p>
+                                            <p>it truly is an artwork. I love how my website operates and looks with this theme. Thank you for the awesome product. ”</p>
+                                        </div>
+                                        <div class="review__avt">
+                                            <img src="https://template.hasthemes.com/lukani/lukani/assets/img/about/testimonial1.png" alt="">
+                                        </div>
+                                        <div class="review__name-customer">
+                                            REBACKA FILSON / CEO OF CSC
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="main__content">
+                    <div class="container">
+                        <h1 class="main__content-heading">
+                            Our Latest Posts
+                        </h1>
+                    </div>
+                </div>
+                <div class="main__content">
+                    <div class="container">
+                        <h1 class="main__content-heading">
+                            Get <span>20% Off </span>Your Next Order
+                        </h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- script -->
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script> -->
+    <script src="index.js"></script>
+</body>
+</html>
