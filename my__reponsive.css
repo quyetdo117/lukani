@@ -251,7 +251,11 @@
 }
 
 /* mobile cục gạch */
-@media(max-width: 320px){
+@media(max-width: 500px){
+    .container{
+        width: 380px;
+    }
+
 
     .ss-1{
         flex: 0 0 8.33333%;

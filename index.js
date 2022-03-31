@@ -1,6 +1,136 @@
+// jquery
+$(document).ready(function(){
+    $(".owl-carousel").owlCarousel({
+        items: 1,
+        loop: true,
+        nav: true,
+        dots: true,
+        animateOut: 'fadeOut'
+    });
+
+    $('.row.product__list-w').slick({
+        slidesToShow: 4,
+        slidesToScroll: 2,
+        prevArrow: '<button type="button" class="slick-prev"><i class="fas fa-angle-left"></i></button>',
+        nextArrow: '<button type="button" class="slick-next"><i class="fas fa-angle-right"></i></button>',
+        speed: 400,
+        rows: 2,
+        infinity: true,
+        dots: false,
+        responsive: [
+            {
+                breakpoint: 978,
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 1,
+                    infinite: true
+                }
+            },
+            {
+                breakpoint: 724,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 1,
+                    infinite: true
+                }
+            },
+            {
+                breakpoint: 500,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    infinite: true
+                }
+            }
+        ]
+    })
+    $('.row.deal').slick({
+        slidesToShow: 4,
+        slidesToScroll: 2,
+        prevArrow: '<button type="button" class="slick-prev"><i class="fas fa-angle-left"></i></button>',
+        nextArrow: '<button type="button" class="slick-next"><i class="fas fa-angle-right"></i></button>',
+        speed: 400,
+        infinity: true,
+        dots: false,
+        responsive: [
+            {
+                breakpoint: 978,
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 1,
+                    infinite: true
+                }
+            },
+            {
+                breakpoint: 724,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 1,
+                    infinite: true
+                }
+            },
+            {
+                breakpoint: 500,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    infinite: true
+                }
+            }
+        ]
+    })
+
+    $('.row.post-w').slick({
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        prevArrow: '<button type="button" class="slick-prev"><i class="fas fa-angle-left"></i></button>',
+        nextArrow: '<button type="button" class="slick-next"><i class="fas fa-angle-right"></i></button>',
+        speed: 400,
+        infinity: true,
+        dots: false,
+        responsive: [
+            {
+                breakpoint: 978,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 1,
+                    infinite: true
+                }
+            },
+            {
+                breakpoint: 724,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    infinite: true
+                }
+            }
+        ]
+    })
+
+    $('.row.customer').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        prevArrow: '<button type="button" class="slick-prev"><i class="fas fa-angle-left"></i></button>',
+        nextArrow: '<button type="button" class="slick-next"><i class="fas fa-angle-right"></i></button>',
+        speed: 400,
+        infinity: true,
+        dots: false,
+    })
+  });
+
+
+
+// javascript
 const S =  document.querySelector.bind(document)
 const SS =  document.querySelectorAll.bind(document)
 
+
+const btnUpTop = S('.upToTop')
+btnUpTop.addEventListener('click',function() {
+  $('html, body').animate({scrollTop : 0},800)
+
+})
 // toggle category
 
 const btnCate = S('.hd-mid__category')
@@ -145,6 +275,7 @@ btnMenu.addEventListener('click', () => {
 
 
 const itemsTabletCate = SS('.tablet-category__item')
+const listSubSecond = SS('.tablet-category__sub-item')
 
 itemsTabletCate.forEach((item) => {
     item.addEventListener('click', () => {
@@ -173,6 +304,67 @@ itemsTabletCate.forEach((item) => {
     })
 })
 
+listSubSecond.forEach((item) => {
+    item.addEventListener('click', () => {
+        const subList = item.querySelector('.sub-second__list')
+        const sizeSubItem = subList.querySelectorAll('.sub-second__list li').length;
+        subList.addEventListener('click', (e) => {
+            e.stopPropagation()
+        })
+        if(item.classList.contains('active')){
+            item.classList.remove('active')
+            subList.style.maxHeight = 0 + 'px'
+        }else{
+            const itemActive = S('.tablet-category__sub-item.active')
+            const itemCateActive = S('.tablet-category__item.active .tablet-category__sub-list')
+            const heightCateActive = itemCateActive.offsetHeight
+            if(itemActive){
+                itemActive.querySelector('.sub-second__list').style.maxHeight = '0px'
+                itemActive.classList.remove('active')
+
+                itemCateActive.style.maxHeight = heightCateActive + sizeSubItem*39 + 'px'
+                item.classList.add('active')
+                subList.style.maxHeight = sizeSubItem*39 + 'px'
+                
+            }else{
+                itemCateActive.style.maxHeight = heightCateActive + sizeSubItem*39 + 'px'
+                item.classList.add('active')
+                subList.style.maxHeight = sizeSubItem*39 + 'px'
+            }
+        }
+    })
+})
+
+// tablet sub menu
+
+const itemsTabletMenu = SS('.tablet-menu__item')
+
+itemsTabletMenu.forEach((item) => {
+    item.addEventListener('click', () => {
+        const subList = item.querySelector('.tablet-menu__sub-list')
+        const sizeSubItem = subList.querySelectorAll('.tablet-menu__sub-item').length;
+        subList.addEventListener('click', (e) => {
+            e.stopPropagation()
+        })
+        if(item.classList.contains('active')){
+            item.classList.remove('active')
+            subList.style.maxHeight = 0 + 'px'
+        }else{
+            const itemActive = S('.tablet-menu__item.active')
+            if(itemActive){
+                itemActive.querySelector('.tablet-menu__sub-list').style.maxHeight = '0px'
+                itemActive.classList.remove('active')
+
+                item.classList.add('active')
+                subList.style.maxHeight = sizeSubItem*45 + 'px'
+                
+            }else{
+                item.classList.add('active')
+                subList.style.maxHeight = sizeSubItem*45 + 'px'
+            }
+        }
+    })
+})
 // toggle cate tablet
 
 const btnTabletCate = S('.tablet-category__btn')
